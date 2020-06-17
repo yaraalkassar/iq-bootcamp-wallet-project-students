@@ -14,8 +14,13 @@ You are required to create this using OOP and a css framework (eg. Bootstrap) an
 - a user can jump between the wallets and create wallets
 
 ## Mockups
+Wallet View
 ![No Wallet View](https://github.com/ReCoded-Org/iq-bootcamp-wallet-project-students/blob/master/mockups/no-wallet-view.jpg?raw=true)
+
+No Wallet View
 ![Wallet View](https://github.com/ReCoded-Org/iq-bootcamp-wallet-project-students/blob/master/mockups/wallet-view.jpg?raw=true)
+
+Create Wallet Form
 ![Create Wallet Form](https://github.com/ReCoded-Org/iq-bootcamp-wallet-project-students/blob/master/mockups/create-wallet-form.jpg?raw=true)
 
 
