@@ -34,4 +34,4 @@ Every object in this app should be a class. For instance:
 
 And class related logic should be put as methods inside the respective class (either static or instance)
 
-Listners and ui updating methods can sit outside of the classes
+Listeners and UI updating methods can sit outside of the classes
