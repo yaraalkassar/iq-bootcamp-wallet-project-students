@@ -17,7 +17,7 @@
 	<nav>
 		<div class="nav-wrapper blue-grey darken-4">
 			<a href="#" class="brand-logo tracking-in-expand-fwd  left">Wallet Thing</a>
-			<div class="input-field right white-class hide">
+			<div class="input-field right white-class hide" id="walletsChange">
 
 				<select class="select-wallet">
       <option value="" disabled selected>Choose Wallet</option>
@@ -30,6 +30,7 @@
 
     </nav>
     <main>
+      <a href="wallet.html"> walletPage </a>
         <section>
             <div class='container'>
                 <div class='row center-align'>
@@ -49,7 +50,7 @@
             <div class="modal-content">
                 <h3>Create new wallet</h3>
                 <div class="row">
-                    <form class="col s12">
+                    <form id="create-new-wallet" class="col s12">
                         <div class="input-field">
                             <input placeholder="" id="name" type="text" class="validate" required>
                             <label for="name">Name</label>
@@ -102,6 +103,7 @@
 
   <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+  <script src='./class.js'></script>
   <script src="./app.js"></script>
 </body>
   </html>

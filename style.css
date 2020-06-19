@@ -11,4 +11,40 @@ input[type=number]::-webkit-outer-spin-button {
   -webkit-appearance: none; 
   margin: 0; 
 }
+.incomeStyle{
+  padding:10px  30px;
+  color: #558b2f;
+  border: 1px solid #558b2f;
+  border-radius:3px;
+}
+.expenseStyle{
+  padding: 10px 30px;
+  color: white;
+  background: #e53935;
+  border-radius:3px;
+}
 
+.incomeStyle span::before, 
+.incomeStyle span::after,
+.expenseStyle span::before, 
+.expenseStyle span::after{
+ display: none;
+}
+
+
+
+.cardtype-item {
+  position: relative;
+}
+.cardtype-item input{
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+}
+.incomeStyle span,
+.expenseStyle span {
+  padding-left: 0 !important;
+}

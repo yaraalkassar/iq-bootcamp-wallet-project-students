@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="./animation.css">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="./style.css">
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+    <nav>
+        <div class="nav-wrapper blue-grey darken-4">
+            <a href="#" class="brand-logo tracking-in-expand-fwd  left">Wallet Thing</a>
+            <div class="input-field right white-class hide" id="walletsChange">
+
+                <select class="select-wallet">
+                    <option value="" disabled selected>Choose Wallet</option>
+                    <option value="createWallet" id="create-wallet-id">Create Wallet</option>
+
+                </select>
+            </div>
+        </div>
+
+
+    </nav>
+    <main>
+        <section>
+
+            <div class="container ">
+                <h3 class=" center-align">Wallet Balance: $ 190000</h3>
+                <form>
+
+
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <input placeholder="" id="Transaction" type="number" class="validate" min="0" required>
+                            <label for="Transaction">Make a Transaction</label>
+
+                        </div>
+                        <div class="input-field col s6">
+                            <ul class="row">
+
+
+                                <li class="cardtype-item col">
+
+                                    <label class="incomeStyle">
+                                        <input name="income-expense" type="radio" required value="income" />
+                                        <span>Income</span>
+                                    </label>
+
+                                </li>
+
+                                <li class="cardtype-item col">
+                                    <label class="expenseStyle">
+                                        <input name="income-expense" type="radio" required value="expense" />
+                                        <span>Expense</span>
+                                    </label>
+              
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row">
+                          <div class="input-field col s4">
+      <input  id="transaction-note" type="text" class="validate">
+      <label  for="transaction-note">Transaction Notes</label>
+    </div>
+                   <div class="input-field col s4">
+      <input  id="transaction-tag" type="text" class="validate">
+      <label  for="transaction-tag">Transaction tags</label>
+    </div>
+                       <div class="input-field col s4">
+  <a class="waves-effect waves-light btn-large">Add transaction</a>
+    </div>
+
+                    </div>
+                </form>
+
+            </div>
+
+
+        </section>
+
+
+
+
+        <!-- Modal Structure -->
+        <div id="modal1" class="modal">
+            <div class="modal-content">
+                <h3>Create new wallet</h3>
+                <div class="row">
+                    <form id="create-new-wallet" class="col s12">
+                        <div class="input-field">
+                            <input placeholder="" id="name" type="text" class="validate" required>
+                            <label for="name">Name</label>
+                        </div>
+                        <div class='row'>
+                            <div class="col">
+                                <p>Currency</p>
+                            </div>
+                            <div class="col">
+                                <p>
+                                    <label>
+                                        <input name="currency" type="radio" required value="USD" />
+                                        <span>US Dollars($)</span>
+                                    </label>
+                                </p>
+                                <p>
+                                    <label>
+                                        <input name="currency" type="radio" required value="IQD" />
+                                        <span>Iraqi Dinars(IQD)</span>
+                                    </label>
+                                </p>
+                            </div>
+
+                        </div>
+                        <div class="input-field">
+                            <input placeholder="" id="balance" type="number" class="validate" min="0" required>
+                            <label for="balance">Balance</label>
+                        </div>
+                        <br>
+                        <div class="input-field">
+                            <textarea id='description' class="materialize-textarea"> </textarea required>
+          <label for="description">Description</label>
+        </div> 
+      
+
+ </div>
+  <!-- Modal Trigger -->
+ 
+    <div class="modal-footer">
+       <button class="waves-effect modal-close waves-light btn modal-trigger red lighten-1" data-target="">Cancel</button>   
+       <button class="btn waves-effect waves-light red lighten-1" type="submit" name="action">Submit
+    <i class="material-icons right">send</i>
+  </button>
+    </div>
+  </div>
+  </div>
+   </form>
+  </main>
+
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+  <script src='./class.js'></script>
+  <script src="./app.js"></script>
+</body>
+  </html>
